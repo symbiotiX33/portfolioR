@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <!-- Мета данные -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Portfolio of Frontend Developer Ruslan">
+            <meta name="keywords" content="Frontend, Developer, Portfolio, HTML, CSS, JavaScript">
+            <meta name="author" content="Ruslan">
+
+        <!-- Название сайта -->
+            <title>Ruslan - Frontend Portfolio</title>
+            <link rel="icon" href="Image/Avatar.jpg" type="image/png">
+
+         <!-- Подключение шрифта -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- Подключение CSS -->
+            <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Подключение анимаций -->
+            <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        </head>
+        <body>
+        <!-- Верхняя часть -->
+            <header class="header" data-aos="fade-down" data-aos-duration="800">
+                <div class="container">
+                    <nav class="nav">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </header>
+
+        <!-- Основная часть -->
+            <main>
+                <section class="hero">
+                <div class="container">
+
+                    <!-- Аватарка -->
+                    <div class="hero-avatar" data-aos="fade" data-aos-duration="800">
+                        <img src="Image/Avatar.jpg" alt="Me">
+                    </div>
+
+                    <!-- Контент -->
+                    <div class="hero-content">
+                        <!-- Профессия -->
+                        <h1 class="hero-title" data-aos="fade-right" data-aos-duration="800">Frontend Developer</h1>
+
+                        <!-- Описание -->
+                        <div class="hero-description" data-aos="fade-left" data-aos-duration="800">
+                        <p>
+                        Hello, my name is <strong>Ruslan</strong>. I'm a beginner
+                        Frontend Developer from Ukraine. My journey started when I
+                        built a website for my friend's indie game development team
+                        with almost no experience. During that project, I discovered
+                        that web development was something I truly enjoyed, and it
+                        became the beginning of my path as a developer.
+                        </p>
+
+                        <br>
+
+                        <p>
+                        Since then, I've been creating different types of websites —
+                        from indie game studio pages to online stores — while
+                        continuously learning new technologies and improving my skills.
+                        </p>
+                        </div>
+
+                        <!-- Навыки -->
+                        <h2 class="skills-title" data-aos="fade-up" data-aos-duration="800">Current Tech Stack</h2>
+
+                        <div class="skills" data-aos="fade-up" data-aos-duration="800">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript (Basic)</span>
+                            <span>Git (Repositories & Core Commands)</span>
+                        </div>
+
+                        <p class="hero-footer" data-aos="fade-right" data-aos-duration="800">You can explore my projects below.</p>
+
+                        <a href="projects.html" class="hero-button" data-aos="fade-left" data-aos-duration="800">View Projects</a>
+                    </div>
+                </div>
+                </section>
+
+                <!-- Разделитель -->
+                    <div class="section-divider"></div>
+
+                <!-- Featured Project -->    
+                <section class="featured-projects">
+
+                    <div class="container">
+
+                        <p class="featured-subtitle" data-aos="fade-right" data-aos-duration="800">FEATURED PROJECT</p>
+                        <h2 class="featured-title" data-aos="fade-left" data-aos-duration="800">My Last Project</h2>
+
+                        <div class="project-image" data-aos="fade-up" data-aos-duration="800">
+                            <img src="Image/FT_Website.jpg" alt="Freedom Team Website"> 
+                        </div>
+
+                        <p class="project-tech" data-aos="fade-up" data-aos-duration="800">HTML • CSS</p>
+                        <p class="project-description" data-aos="fade-up" data-aos-duration="800">A simple yet effective website for a small indie game development team.</p>
+
+                        <a href="#" class="project-button" data-aos="fade-up" data-aos-duration="800">Learn More</a>
+                    </div>
+                </section>
+            </main>
+
+        <!-- Нижняя часть -->
+            <footer class="footer">
+                <div class="container">
+                    <h2 class="footer-name">Ruslan</h2>
+                    <p class="footer-role">Frontend Developer</p>
+                    <p class="footer-copyright">© 2026 Ruslan. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+            <script>AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+        }); </script>
+        </body>
+        </html>

@@ -1,0 +1,144 @@
+/* Projects Section */
+.projects {
+    padding-top: 140px;
+    padding-bottom: var(--section-padding);
+}
+
+/* Projects Header */
+.project-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-header h1 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+}
+
+/* Project Card */
+.project-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 400px;
+
+    border-radius: var(--radius-large);
+    overflow: hidden;
+
+    border: 1px solid var(--clr-border);
+    box-shadow: var(--shadow-small);
+
+    isolation: isolate;
+}
+
+/* Project Background */
+.project-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(13, 17, 23, 0.82),
+            rgba(13, 17, 23, 0.82)
+        ),
+        url("../Image/Project_FT_Team.png");
+
+    background-size: cover;
+    background-position: center;
+
+    transition: transform 0.6s ease;
+
+    z-index: -1;
+}
+
+/* Background Animation */
+.project-card:hover::before {
+    transform: scale(1.08);
+}
+
+/* Project Information */
+.project-info {
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 50px;
+}
+
+/* Project Logo */
+.project-logo {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.project-logo img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.project-logo h2 {
+    font-size: var(--fs-text-md);
+    font-weight: var(--fw-bold);
+
+    text-align: center;
+}
+
+/* Project Description */
+.project-content {
+    flex: 1;
+}
+
+.project-content p {
+    max-width: 650px;
+
+    font-size: var(--fs-text-md);
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    color: var(--clr-primary);
+
+    font-size: var(--fs-text-sm);
+    font-weight: var(--fw-bold);
+
+    letter-spacing: 2px;
+}
+
+/* Project Button */
+.project-button {
+    flex-shrink: 0;
+
+    display: inline-block;
+
+    padding: 18px 40px;
+
+    background: var(--clr-primary);
+    color: var(--clr-bg-main);
+
+    border-radius: var(--radius-medium);
+
+    font-size: var(--fs-text-md);
+    font-weight: var(--fw-bold);
+
+    transition: var(--transition);
+}
+
+.project-button:hover {
+    background: var(--clr-primary-hover);
+}

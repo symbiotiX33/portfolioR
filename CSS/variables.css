@@ -1,0 +1,48 @@
+:root {
+    /* Colors */
+    --clr-primary: #58A6FF;
+    --clr-primary-hover: #79C0FF;
+
+    --clr-bg-main: #0D1117;
+    --clr-bg-section: #161B22;
+    --clr-bg-card: #21262D;
+
+    --clr-text-main: #F0F6FC;
+    --clr-text-secondary: #8B949E;
+
+    --clr-border: #30363D;
+
+    /* Typography */
+    --ff-main: "Nunito", sans-serif;
+
+    --fs-h1: 64px;
+    --fs-h2: 42px;
+    --fs-h3: 30px;
+
+    --fs-text-lg: 30px;
+    --fs-text-md: 20px;
+    --fs-text-sm: 16px;
+
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Border */
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 20px;
+
+    /* Shadow */
+    --shadow-small:0 0 15px rgba(88,166,255,.15);
+    --shadow-large:0 0 30px rgba(88,166,255,.25);
+
+    /* Spacing */
+    --container: 1200px;
+    --section-padding: 100px;
+
+    /* Animation */
+    --transition: .3s ease;
+}
